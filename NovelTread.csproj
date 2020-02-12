@@ -37,6 +37,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -55,6 +56,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Book.cs" />
+    <Compile Include="Settings.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -81,18 +84,120 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include=".git\COMMIT_EDITMSG" />
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\master" />
+    <None Include=".git\logs\refs\remotes\origin\master" />
+    <None Include=".git\objects\01\851be391429d4230141071c25970f45ea9e11c" />
+    <None Include=".git\objects\03\3d7a5e9e2266753180f4e3a9299f575046701e" />
+    <None Include=".git\objects\06\27ef120f9c455f50c9afa525c8f024c10873e4" />
+    <None Include=".git\objects\08\00f8573e81eee315d0d13afc8a4f4392e0116d" />
+    <None Include=".git\objects\0a\aaea251792067a389e48fabfebe20978a35078" />
+    <None Include=".git\objects\0a\b1f852f53331c42e68ec2e97a246d1ac6bfce2" />
+    <None Include=".git\objects\12\4dd839a95bf3603c98e290192a613ded199cf3" />
+    <None Include=".git\objects\14\db833235d373f82fa2db3a449721c72295a576" />
+    <None Include=".git\objects\14\fc2386e82152a8b2aae6be711cc030973ab50a" />
+    <None Include=".git\objects\1c\83aa0f89a644305636bf108e7af02672c633e9" />
+    <None Include=".git\objects\1f\400051faff09aaa1d2f52a4f05791fe9b85056" />
+    <None Include=".git\objects\21\0debaf7bfdd7cfe711f02ff7efdd57ffcbd1cc" />
+    <None Include=".git\objects\22\2353615423bc49828c5e6f28d432f525feef59" />
+    <None Include=".git\objects\25\fe89b004d428688f71f437a74c6ede46d1a0f4" />
+    <None Include=".git\objects\2f\e20342784833f73933b4cfe2ddccd7574fd651" />
+    <None Include=".git\objects\30\d0c9ff15d694f14cf4b910bc08727075883eca" />
+    <None Include=".git\objects\32\360899705c90981c81e6df9168ab6f8a436c3e" />
+    <None Include=".git\objects\32\ff27e7f3168d17047adf41f2cc815fc666b87e" />
+    <None Include=".git\objects\36\d314c17d6c0f70fb5629605cfa659719779c56" />
+    <None Include=".git\objects\39\645652af62950ebf3b28ec3a5400dcec30b1c4" />
+    <None Include=".git\objects\3b\4a03c064c2d34548f64a5ac20cebe0b2de6ef3" />
+    <None Include=".git\objects\3c\079d773b596796bfb17c5b6349864ef2cf26bb" />
+    <None Include=".git\objects\3c\48daf7172a3da638c025ed311f5b6ef7ad7452" />
+    <None Include=".git\objects\44\0c6e92c45fb7efa60fc8e250e6e4b360355108" />
+    <None Include=".git\objects\47\26c17a016e05460f2fbb45b02962eed3d5207c" />
+    <None Include=".git\objects\4a\d6fc5c28e338034525e5f529e19db6016d1178" />
+    <None Include=".git\objects\4c\4ceafca7307bf9417641e873dd1afefe091cb4" />
+    <None Include=".git\objects\53\6a29ac25bc1544df66e1e44f1600225d9c1453" />
+    <None Include=".git\objects\56\efbc7b5f15b5166cc89dae0406895b57de0b67" />
+    <None Include=".git\objects\59\5289c281286cb1ddf076a0182e990f004d0ed2" />
+    <None Include=".git\objects\5b\5d6da0e635ffb664219818a3cf6086615dba15" />
+    <None Include=".git\objects\63\886c15c81370b1f27e9ef8deb1a727c3c6155f" />
+    <None Include=".git\objects\65\e69f774395b184bf6b729231a5cc37e42605ca" />
+    <None Include=".git\objects\67\b677d055fd7b3c84f92b6ba8706a82acf1531e" />
+    <None Include=".git\objects\6c\05a9776bd7cbae976fdcec7e3a254e93018279" />
+    <None Include=".git\objects\71\18e564fe115775034c6a9f1659879339a4a2a0" />
+    <None Include=".git\objects\76\a936d3b0ba9d2134f7f397390a5efcfc640f07" />
+    <None Include=".git\objects\7b\5da87f7182b35ca926b996a754c9d589c778ea" />
+    <None Include=".git\objects\81\6bc4098a2e0d9144feb23bdc4341086f075ab9" />
+    <None Include=".git\objects\89\f277777ed3b3da912e95f86bcdbdf91fe17f87" />
+    <None Include=".git\objects\8b\e5d183da4820968f1037a4d7827a9eccb3b96f" />
+    <None Include=".git\objects\93\a24030e2be8b50a30916dc511ae90b8fc124be" />
+    <None Include=".git\objects\96\ff57fcd729a638b37d13e6c8245071ea7e7de8" />
+    <None Include=".git\objects\97\24dd55ed2bae557ba2dd457716ce3690574e54" />
+    <None Include=".git\objects\98\7e544889ba5821ec486fd04fe1a9e34196b22e" />
+    <None Include=".git\objects\9b\0cb7adacf185190779ae70b2fc76159c6789ce" />
+    <None Include=".git\objects\a0\06f7b0d656d016e102c4303eefa822e6f70035" />
+    <None Include=".git\objects\a3\f57779f0b35cfefb98a428383daa85256409b6" />
+    <None Include=".git\objects\ac\63030978267cc10a9adda5732be2c37b5e953d" />
+    <None Include=".git\objects\af\7dbebbacef595e3089c01c05671016c21a8304" />
+    <None Include=".git\objects\b2\2891d1d80d6de9a02c2c305749422221503baf" />
+    <None Include=".git\objects\bc\a5b7f4ca074a7ca2349b46712c71635b6ca702" />
+    <None Include=".git\objects\bd\86e383a6fdcacdeaddd2853840b0919f8aecc2" />
+    <None Include=".git\objects\c5\8b271624e8a344a9c9b546b4303b0a6dcebdbb" />
+    <None Include=".git\objects\ca\2b996106c7f8d1d370a35aba335417fe90509f" />
+    <None Include=".git\objects\cb\be299357e29a4fd20c203715f1d60b8b257fdf" />
+    <None Include=".git\objects\d3\6259729b7e9f521fc48bee17d9b683784275e2" />
+    <None Include=".git\objects\d6\1ff0a65fbf76d30b09b3956e68f74b2dcf9708" />
+    <None Include=".git\objects\d7\de27187558caacee93873a2c42ae2bc24ed132" />
+    <None Include=".git\objects\db\baac1ef7572582e29b0babff5316d253121bd6" />
+    <None Include=".git\objects\df\a26f21f6f91a50356d61a150d548ab8c05af3b" />
+    <None Include=".git\objects\e1\bb483a36d9096ae8c17ac879d38320b08db506" />
+    <None Include=".git\objects\e4\c9982fc3d2b65b2c0e9ea59008f3d38b265fdf" />
+    <None Include=".git\objects\e6\9de29bb2d1d6434b8b29ae775ad8c2e48c5391" />
+    <None Include=".git\objects\e7\4e8158dd2d8e92134ef5c5918e556b8028445c" />
+    <None Include=".git\objects\e9\eda254ce95ee244c3e10cf8544e4f668fe666c" />
+    <None Include=".git\objects\ea\859fd29b8fd260978d4c43df695ec9e77d96f2" />
+    <None Include=".git\objects\ff\2d02af29465275a5ba7bdb430bc6ed0f7c3190" />
+    <None Include=".git\refs\heads\master" />
+    <None Include=".git\refs\remotes\origin\master" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\icon.png" />
+    <Resource Include="Icon.png" />
+    <Resource Include="book.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\objects\pack\" />
+    <Folder Include=".git\refs\tags\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,12 +1,13 @@
-﻿<Window x:Class="NovelTread.MainWindow"
+﻿<Window x:Name="MainWin" x:Class="NovelTread.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NovelTread"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Novel Tread" Height="450" Width="800" Icon="Icon.png" Loaded="MainWin_Loaded">
     <Grid>
-        
+        <WrapPanel x:Name="BookForm" HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="772">
+        </WrapPanel>
     </Grid>
 </Window>

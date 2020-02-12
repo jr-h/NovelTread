@@ -12,3 +12,6 @@ C:\Users\Jrh\source\repos\NovelTread\obj\Debug\NovelTread.Properties.Resources.r
 C:\Users\Jrh\source\repos\NovelTread\obj\Debug\NovelTread.csproj.GenerateResource.cache
 C:\Users\Jrh\source\repos\NovelTread\obj\Debug\NovelTread.exe
 C:\Users\Jrh\source\repos\NovelTread\obj\Debug\NovelTread.pdb
+C:\Users\Jrh\source\repos\NovelTread\obj\Debug\NovelTread_Content.g.cs
+C:\Users\Jrh\source\repos\NovelTread\bin\Debug\Properties\Settings.Designer.cs
+C:\Users\Jrh\source\repos\NovelTread\bin\Debug\Properties\Settings.settings

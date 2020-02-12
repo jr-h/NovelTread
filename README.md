@@ -2,7 +2,7 @@
 
 # NovelTread
 
-![语言](README.assets/Language-C#-green.svg)![文件格式](https://img.shields.io/badge/File-txt-lightgrey.svg)
+![语言](https://img.shields.io/badge/Language-C%23-green.svg)![文件格式](https://img.shields.io/badge/File-txt-lightgrey.svg)
 
 > 一款开源本地小说阅读器
 
