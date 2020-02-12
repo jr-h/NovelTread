@@ -8,5 +8,8 @@
     <Setting Name="书架目录" Type="System.String" Scope="User">
       <Value Profile="(Default)">\Novels</Value>
     </Setting>
+    <Setting Name="真目录" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
   </Settings>
 </SettingsFile>

@@ -46,5 +46,17 @@ namespace NovelTread.Properties {
                 this["书架目录"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string 真目录 {
+            get {
+                return ((string)(this["真目录"]));
+            }
+            set {
+                this["真目录"] = value;
+            }
+        }
     }
 }

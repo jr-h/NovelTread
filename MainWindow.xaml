@@ -7,7 +7,6 @@
         mc:Ignorable="d"
         Title="Novel Tread" Height="450" Width="800" Icon="Icon.png" Loaded="MainWin_Loaded">
     <Grid>
-        <WrapPanel x:Name="BookForm" HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="772">
-        </WrapPanel>
+        <WrapPanel x:Name="BookForm" HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="772"/>
     </Grid>
 </Window>
