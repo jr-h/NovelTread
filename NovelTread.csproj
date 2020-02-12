@@ -192,7 +192,6 @@
   <ItemGroup>
     <Content Include="Resources\icon.png" />
     <Resource Include="Icon.png" />
-    <Resource Include="book.ico" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include=".git\objects\info\" />

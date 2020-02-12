@@ -9,7 +9,5 @@
 //------------------------------------------------------------------------------
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/icon.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("readme.assets/file-txt-lightgrey.svg")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("readme.assets/language-c%23-green.svg")]
 
 
